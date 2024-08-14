@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>HopeAbounds Uganda| Home Page 01</title>
+    <title>HopeAbound</title>
     <!-- Stylesheets -->
     <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
@@ -42,11 +42,6 @@
                         </ul>
                     </div>
 
-                    <div class="top-right clearfix">
-                        <ul class="info clearfix">
-                            <li><a href="#"><span class="icon fa fa-sign-in-alt"></span> Login or Register</a></li>
-                        </ul>
-                    </div>
                 </div>
             </div>
         </div>
@@ -72,48 +67,45 @@
                         <nav class="main-menu navbar-expand-md navbar-light">
                             <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                                 <ul class="navigation clearfix">
-                                    <li class="current dropdown"><a href="home.html">Home</a>
+                                    <li class="current dropdown"><a href="{% url 'home' %}">Home</a>
                                         <ul>
-                                            <li><a href="home.html">Home Charity</a></li>
-                                            <li><a href="index-2.html">Home Volunteer</a></li>
-                                            <li><a href="index-3.html">Home Wildlife</a></li>
-                                            <li><a href="index-4.html">Home Environment</a></li>
-                                            <li class="dropdown"><a href="home.html">Header Styles</a>
+                                            <li><a href="{% url 'home' %}">Home</a></li>
+                                            <li class="dropdown"><a href="{% url 'home' %}">Header Styles</a>
                                                 <ul>
-                                                    <li><a href="home.html">Header Style One</a></li>
-                                                    <li><a href="index-2.html">Header Style Two</a></li>
+                                                    <li><a href="{% url 'home' %}"></a></li>
+                                                    <!--                                                    <li><a href="index-2.html">Header Style Two</a></li>-->
                                                 </ul>
                                             </li>
                                         </ul>
                                     </li>
-                                    <li class="dropdown"><a href="about.html">About</a>
+                                    <li class="dropdown"><a href="{% url 'about' %}">About</a>
                                         <ul>
-                                            <li><a href="about.html">About Us</a></li>
-                                            <li><a href="volunteers.html">Our Volunteers</a></li>
-                                            <li><a href="faq.html">Faq's</a></li>
-                                            <li><a href="donate.html">Make Donation</a></li>
+                                            <li><a href="{% url 'about' %}">About Us</a></li>
+                                            <li><a href="{% url 'volunteers' %}">Our Volunteers</a></li>
+                                            <li><a href="{% url 'faq' %}">Faq's</a></li>
+                                            <li><a href="{% url 'donate' %}">Sponsor a Child</a></li>
                                         </ul>
                                     </li>
-                                    <li class="dropdown"><a href="causes.html">Causes</a>
+                                    <li class="dropdown"><a href="{% url 'causes' %}">Causes</a>
                                         <ul>
-                                            <li><a href="causes.html">See Causes</a></li>
-                                            <li><a href="cause-single.html">Cause Details</a></li>
+                                            <li><a href="{% url 'causes' %}">See Causes</a></li>
+                                            <li><a href="{% url 'cause_single' %}">Cause Details</a></li>
                                         </ul>
                                     </li>
-                                    <li class="dropdown"><a href="events.html">Pages</a>
+                                    <li class="dropdown"><a href="{% url 'events' %}">Pages</a>
                                         <ul>
-                                            <li><a href="events.html">All Events</a></li>
-                                            <li><a href="event-single.html">Event Details</a></li>
-                                            <li><a href="donate.html">Make Donation</a></li>
+                                            <li><a href="{% url 'events' %}">All Events</a></li>
+                                            <li><a href="{% url 'event_single' %}">Event Details</a></li>
+                                            <li><a href="{% url 'donate' %}">Sponsor a Child</a></li>
                                         </ul>
                                     </li>
-                                    <li class="dropdown"><a href="blog.html">Blog</a>
+                                    <li class="dropdown"><a href="{% url 'blog' %}">Blog</a>
                                         <ul>
-                                            <li><a href="blog.html">Visit Our Blog</a></li>
-                                            <li><a href="blog-single.html">Blog Post Details</a></li>
+                                            <li><a href="{% url 'blog' %}">Visit Our Blog</a></li>
+                                            <li><a href="{% url 'blog_single' %}">Blog Post Details</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="{% url 'contact' %}">Contact</a></li>
                                 </ul>
                             </div>
                         </nav>
@@ -170,156 +162,154 @@
         </div><!-- End Mobile Menu -->
     </header>
     <!-- End Main Header -->
+      <!-- Banner Section -->
+    <section class="banner-section">
+		<div class="banner-carousel kausid-carousel owl-theme owl-carousel" data-options='{"loop": true, "margin": 0, "autoheight":true, "lazyload":true, "nav": true, "dots": true, "autoplay": true, "autoplayTimeout": 6000, "smartSpeed": 300, "responsive":{ "0" :{ "items": "1" }, "768" :{ "items" : "1" } , "1000":{ "items" : "1" }}}'>
+			<!-- Slide Item -->
+			<div class="slide-item">
+				<div class="image-layer" style="background-image:url('images/main-slider/1.jpg')"></div>
+
+				<div class="auto-container">
+					<div class="content-box">
+                        <div class="content">
+                            <div class="inner">
+                                <div class="sub-title">support the causes that matters</div>
+        						<h2>Let’s Make The <br>World Better Place</h2>
+        						<div class="links-box"><a href="donate.html" class="theme-btn btn-style-two"><span class="btn-title">Get involved</span></a></div>
+                            </div>
+                        </div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Slide Item -->
+			<div class="slide-item">
+				<div class="image-layer" style="background-image:url('images/main-slider/2.jpg')"></div>
+
+				<div class="auto-container">
+					<div class="content-box">
+                        <div class="content">
+                            <div class="inner">
+                                <div class="sub-title">support the causes that matters</div>
+                                <h2>Let’s Make The <br>World Better Place</h2>
+                                <div class="links-box"><a href="donate.html" class="theme-btn btn-style-two"><span class="btn-title">Get involved</span></a></div>
+                            </div>
+                        </div>
+                    </div>
+				</div>
+			</div>
+
+			<!-- Slide Item -->
+			<div class="slide-item">
+				<div class="image-layer" style="background-image:url('images/main-slider/3.jpg')"></div>
+
+				<div class="auto-container">
+					<div class="content-box">
+                        <div class="content">
+                            <div class="inner">
+                                <div class="sub-title">support the causes that matters</div>
+                                <h2>Let’s Make The <br>World Better Place</h2>
+                                <div class="links-box"><a href="donate.html" class="theme-btn btn-style-two"><span class="btn-title">Get involved</span></a></div>
+                            </div>
+                        </div>
+                    </div>
+				</div>
+			</div>
+
+		</div>
+    </section>
+    <!--End Banner Section -->
+
+
+
     {% block content %}
 
     {% endblock %}
+
     <!-- Main Footer -->
     <footer class="main-footer">
-        <div class="image-layer" style="background-image:url('{% static 'images/background/footer-bg.jpg' %})"></div>
+        <!--        <div class="image-layer" style="background-image:url('{% static 'images/background/footer-bg.jpg' %}')"></div>-->
 
         <div class="auto-container">
             <!--Widgets Section-->
             <div class="widgets-section">
                 <div class="row clearfix">
-
-                    <!--Column-->
-                    <div class="column big-column col-lg-4 col-md-12 col-sm-12">
+                    <!-- Column 1 -->
+                    <div class="column col-lg-4 col-md-8 col-sm-14">
                         <div class="footer-widget logo-widget">
                             <div class="widget-content">
                                 <div class="footer-logo">
-                                    <a href="home.html"><img alt="" src="{% static 'images/footer-logo.png' %}"/></a>
+                                    <a href="home.html"><img alt="" src="{% static 'images/sticky-logo.png' %}"/></a>
                                 </div>
-                                <div class="text">Alit usmod tempor incididunt laboret quis arud exercitation ullamcos
-                                    laboris nisiut aliquip. exa consequat duis aute rue dolor prehendrit lorem esse
-                                    cillum dolore eu fugiat nulla.
+                                <div class="text"> We are dedicated to empowering
+                                    communities by focusing on children. We believe that by
+                                    investing in the education and well-being of children, we can create a ripple effect
+                                    that lifts entire families out of poverty and fosters lasting change.
                                 </div>
-                                <ul class="social-links clearfix">
-                                    <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
-                                    <li><a href="#"><span class="fab fa-twitter"></span></a></li>
-                                    <li><a href="#"><span class="fab fa-vimeo-v"></span></a></li>
-                                    <li><a href="#"><span class="fab fa-instagram"></span></a></li>
-                                    <li><a href="#"><span class="fab fa-youtube"></span></a></li>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Column 2 -->
+                    <div class="column col-lg-2 col-md-6 col-sm-12">
+                        <div class="footer-widget links-widget">
+                            <div class="widget-content">
+                                <h3>About Us</h3>
+                                <ul>
+                                    <li><a href="#">Latest Causes</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="#">Connect With Us</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <!--Column-->
-                    <div class="big-column col-lg-8 col-md-12 col-sm-12">
-                        <div class="row clearfix">
 
-                            <!--Column-->
-                            <div class="column col-lg-4 col-md-4 col-sm-12">
-                                <div class="footer-widget links-widget">
-                                    <div class="widget-content">
-                                        <h3>About Us</h3>
-                                        <ul>
-                                            <li><a href="#">Upcoming Events</a></li>
-                                            <li><a href="#">Latest Causes</a></li>
-                                            <li><a href="#">News Blog</a></li>
-                                            <li><a href="#">Contact Us</a></li>
-                                            <li><a href="#">Who We Are</a></li>
-                                            <li><a href="#">Connect With Us</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!--Column-->
-                            <div class="column col-lg-4 col-md-4 col-sm-12">
-                                <div class="footer-widget links-widget">
-                                    <div class="widget-content">
-                                        <h3>Our Partners</h3>
-                                        <ul>
-                                            <li><a href="#">Donate HopeAbounds </a></li>
-                                            <li><a href="#">Save Our earth</a></li>
-                                            <li><a href="#">Water Shortages</a></li>
-                                            <li><a href="#">Recycle Better</a></li>
-                                            <li><a href="#">Plant Trees Welfare</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!--Column-->
-                            <div class="column col-lg-4 col-md-4 col-sm-12">
-                                <div class="footer-widget links-widget">
-                                    <div class="widget-content">
-                                        <h3>Explore</h3>
-                                        <ul>
-                                            <li><a href="#">Adopt A Child</a></li>
-                                            <li><a href="#">Join Our Programs</a></li>
-                                            <li><a href="#">Food Crisis Looms</a></li>
-                                            <li><a href="#">Make Donation</a></li>
-                                            <li><a href="#">Press Releases</a></li>
-                                            <li><a href="#">Global Programs</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!--Column-->
-                    <div class="big-column col-lg-12 col-md-12 col-sm-12">
-                        <div class="row clearfix">
-                            <!--Column-->
-                            <div class="column col-lg-4 col-md-12 col-sm-12">
-                                <div class="footer-widget info-widget">
-                                    <div class="widget-content">
-                                        <h3>Contact Us</h3>
-                                        <ul class="contact-info">
-                                            <li>4291 Glenview Drive, Florence, MI 29501</li>
-                                            <li><a href="tel:+256702140099"><span class="fa fa-phone-alt"></span> Phone
-                                                +256702140099</a></li>
-                                            <li><a href="mailto:hopeabound@info.org"><span
-                                                    class="fa fa-envelope-open"></span> hopeabound@info.org</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--Column-->
-                            <div class="column col-lg-8 col-md-12 col-sm-12">
-                                <div class="footer-widget info-widget">
-                                    <div class="widget-content">
-                                        <h3>Subscribe Our Newsletter For Updates</h3>
-                                        <div class="newsletter-form">
-                                            <form action="contact.html" method="post">
-                                                <div class="form-group clearfix">
-                                                    <input name="email" placeholder="Enter Your Email" required=""
-                                                           type="email" value="">
-                                                    <button class="theme-btn newsletter-btn" type="submit">Subscribe
-                                                    </button>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
+                    <!-- Column 3 -->
+                    <div class="column col-lg-2 col-md-6 col-sm-12">
+                        <div class="footer-widget links-widget">
+                            <div class="widget-content">
+                                <h3>Our Partners</h3>
+                                <ul>
+                                    <li><a href="#">Donate HopeAbounds </a></li>
+                                    <li><a href="#">Save Our Earth</a></li>
+                                    <li><a href="#">Sponsorships</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
 
+                    <!-- Column 5 -->
+                    <div class="column col-lg-2 col-md-6 col-sm-12">
+                        <div class="footer-widget links-widget">
+                            <div class="widget-content">
+                                <h3>Explore</h3>
+                                <ul>
+                                    <li><a href="#">Join Our Programs</a></li>
+                                    <li><a href="#">Sponsor a Child</a></li>
+                                    <li><a href="#">Press Releases</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
             </div>
         </div>
-
-        <!-- Footer Bottom -->
         <div class="footer-bottom">
             <div class="auto-container">
                 <div class="inner">
                     <!--Copyright-->
-                    <div class="copyright">Copyrights (c) 2024 <a href="#">HopeAboundsUganda.</a> All
+                    <div class="copyright">Copyrights (c) 2024 <a href="#">HopeAbound.</a> All
                         rights reserved.
                     </div>
                 </div>
             </div>
         </div>
-
     </footer>
-
-
 </div>
+
+
+<!-- Footer Bottom -->
+
 <!--End pagewrapper-->
 
 <!--Scroll to top-->
