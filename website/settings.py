@@ -48,7 +48,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'website.urls'
+ROOT_URLCONF = 'Website.urls'
 
 TEMPLATES = [
     {
@@ -66,7 +66,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'website.wsgi.application'
+WSGI_APPLICATION = 'Website.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
@@ -114,12 +114,10 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'pages/static'),
 ]
 
-STATIC_URL = '/static/'
+STATIC_URL = '/pages/static/'
 IMAGE_DIR = [BASE_DIR / '/images/']
 FONT_DIR = [BASE_DIR / '/fonts/']
 JS_DIR = [BASE_DIR / '/font/']
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, '/media')
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # Default primary key field type
