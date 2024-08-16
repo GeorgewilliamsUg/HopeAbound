@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from .models import ChildProfile
 
 
@@ -20,10 +20,6 @@ def causes_view(request):
 
 def cause_single_view(request):
     return render(request, 'cause_single.html')
-
-
-def donate_view(request):
-    return render(request, 'sponsorship.html')
 
 
 def faqs_view(request):
@@ -54,6 +50,11 @@ def volunteers_view(request):
     return render(request, 'volunteers.html')
 
 
-def child_profile_view(request):
+def sponsorship_view(request):
     children = ChildProfile.objects.all()
     return render(request, 'sponsorship.html', {'children': children})
+
+
+def child_detail_view(request, child_id):
+    child = get_object_or_404(ChildProfile, id=child_id)
+    return render(request, 'child_detail.html', {'child': child})

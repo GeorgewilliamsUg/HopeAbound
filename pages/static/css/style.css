@@ -1808,7 +1808,7 @@ img.lazy-image.loaded{
 .banner-carousel .slide-item{
 	position: relative;
 	display: block;
-	background-color: #ad4813;
+	background-color: #F8C6A2;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -4344,6 +4344,44 @@ img.lazy-image.loaded{
 ====================================================================
 
 ***/
+-----
+/* Styles for the sponsorship page */
+.children-profiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.child-profile {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    width: calc(33% - 40px); /* Adjust width based on your layout */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.child-profile img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.child-profile h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.child-profile p {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+--------
 
 .sponsors-section{
 	position:relative;

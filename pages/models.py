@@ -18,6 +18,7 @@ class ChildProfile(models.Model):
         ('T', 'Tertiary'),
         ('u', 'University'),
     ]
+    objects = models.Manager()
 
     name = models.CharField(max_length=100)
     age = models.PositiveIntegerField()
@@ -25,6 +26,14 @@ class ChildProfile(models.Model):
     Child_class = models.CharField(max_length=10, choices=CLASS_CHOICES)
     is_orphan = models.BooleanField(default=False)
     Picture = models.ImageField(upload_to='children', blank=True, null=True)
+    story = models.TextField(blank=True, null=True)  # New field for the child's story
 
-    def __str__(self):
-        return self.name
+
+def __str__(self):
+    return self.name
+
+
+class Meta:
+    verbose_name = 'Child Profile'
+    verbose_name_plural = "Children Profile"
+    ordering = ['name']

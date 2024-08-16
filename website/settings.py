@@ -118,6 +118,8 @@ STATIC_URL = '/static/'
 IMAGE_DIR = [BASE_DIR / '/images/']
 FONT_DIR = [BASE_DIR / '/fonts/']
 JS_DIR = [BASE_DIR / '/font/']
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, '/media')
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # Default primary key field type
