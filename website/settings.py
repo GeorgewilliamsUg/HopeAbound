@@ -48,7 +48,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'Website.urls'
+ROOT_URLCONF = 'website.urls'
 
 TEMPLATES = [
     {
@@ -66,7 +66,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'Website.wsgi.application'
+WSGI_APPLICATION = 'website.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
@@ -114,7 +114,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'pages/static'),
 ]
 
-STATIC_URL = '/pages/static/'
+STATIC_URL = '/static/'
 IMAGE_DIR = [BASE_DIR / '/images/']
 FONT_DIR = [BASE_DIR / '/fonts/']
 JS_DIR = [BASE_DIR / '/font/']

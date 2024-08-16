@@ -21,7 +21,7 @@
     <!--[if lt IE 9]>
     <script src="js/respond.js"></script><![endif]-->
 </head>
-<body>
+
 <div class="page-wrapper">
     <!-- Preloader -->
     <div class="preloader">
@@ -82,7 +82,7 @@
                                         <ul>
                                             <li><a href="{% url 'about' %}">About Us</a></li>
                                             <li><a href="{% url 'volunteers' %}">Our Volunteers</a></li>
-                                            <li><a href="{% url 'faq' %}">Faq's</a></li>
+
                                             <li><a href="{% url 'donate' %}">Sponsor a Child</a></li>
                                         </ul>
                                     </li>
@@ -160,66 +160,69 @@
                 </div>
             </nav>
         </div><!-- End Mobile Menu -->
+
     </header>
     <!-- End Main Header -->
-      <!-- Banner Section -->
+    <!-- Banner Section -->
     <section class="banner-section">
-		<div class="banner-carousel kausid-carousel owl-theme owl-carousel" data-options='{"loop": true, "margin": 0, "autoheight":true, "lazyload":true, "nav": true, "dots": true, "autoplay": true, "autoplayTimeout": 6000, "smartSpeed": 300, "responsive":{ "0" :{ "items": "1" }, "768" :{ "items" : "1" } , "1000":{ "items" : "1" }}}'>
-			<!-- Slide Item -->
-			<div class="slide-item">
-				<div class="image-layer" style="background-image:url('images/main-slider/1.jpg')"></div>
+        <div class="banner-carousel kausid-carousel owl-theme owl-carousel"
+             data-options='{"loop": true, "margin": 0, "autoheight":true, "lazyload":true, "nav": true, "dots": true, "autoplay": true, "autoplayTimeout": 6000, "smartSpeed": 300, "responsive":{ "0" :{ "items": "1" }, "768" :{ "items" : "1" } , "1000":{ "items" : "1" }}}'>
+            <!-- Slide Item -->
+            <div class="slide-item">
+                <div class="image-layer" style="background-image:url('images/main-slider/1.jpg')"></div>
 
-				<div class="auto-container">
-					<div class="content-box">
-                        <div class="content">
-                            <div class="inner">
-                                <div class="sub-title">support the causes that matters</div>
-        						<h2>Let’s Make The <br>World Better Place</h2>
-        						<div class="links-box"><a href="donate.html" class="theme-btn btn-style-two"><span class="btn-title">Get involved</span></a></div>
-                            </div>
-                        </div>
-					</div>
-				</div>
-			</div>
-
-			<!-- Slide Item -->
-			<div class="slide-item">
-				<div class="image-layer" style="background-image:url('images/main-slider/2.jpg')"></div>
-
-				<div class="auto-container">
-					<div class="content-box">
+                <div class="auto-container">
+                    <div class="content-box">
                         <div class="content">
                             <div class="inner">
                                 <div class="sub-title">support the causes that matters</div>
                                 <h2>Let’s Make The <br>World Better Place</h2>
-                                <div class="links-box"><a href="donate.html" class="theme-btn btn-style-two"><span class="btn-title">Get involved</span></a></div>
+                                <div class="links-box"><a class="theme-btn btn-style-two" href="donate.html"><span
+                                        class="btn-title">Get involved</span></a></div>
                             </div>
                         </div>
                     </div>
-				</div>
-			</div>
+                </div>
+            </div>
 
-			<!-- Slide Item -->
-			<div class="slide-item">
-				<div class="image-layer" style="background-image:url('images/main-slider/3.jpg')"></div>
+            <!-- Slide Item -->
+            <div class="slide-item">
+                <div class="image-layer" style="background-image:url('images/main-slider/2.jpg')"></div>
 
-				<div class="auto-container">
-					<div class="content-box">
+                <div class="auto-container">
+                    <div class="content-box">
                         <div class="content">
                             <div class="inner">
                                 <div class="sub-title">support the causes that matters</div>
                                 <h2>Let’s Make The <br>World Better Place</h2>
-                                <div class="links-box"><a href="donate.html" class="theme-btn btn-style-two"><span class="btn-title">Get involved</span></a></div>
+                                <div class="links-box"><a class="theme-btn btn-style-two" href="donate.html"><span
+                                        class="btn-title">Get involved</span></a></div>
                             </div>
                         </div>
                     </div>
-				</div>
-			</div>
+                </div>
+            </div>
 
-		</div>
+            <!-- Slide Item -->
+            <div class="slide-item">
+                <div class="image-layer" style="background-image:url('images/main-slider/3.jpg')"></div>
+
+                <div class="auto-container">
+                    <div class="content-box">
+                        <div class="content">
+                            <div class="inner">
+                                <div class="sub-title">support the causes that matters</div>
+                                <h2>Let’s Make The <br>World Better Place</h2>
+                                <div class="links-box"><a class="theme-btn btn-style-two" href="donate.html"><span
+                                        class="btn-title">Get involved</span></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <!--End Banner Section -->
-
 
 
     {% block content %}
@@ -228,8 +231,6 @@
 
     <!-- Main Footer -->
     <footer class="main-footer">
-        <!--        <div class="image-layer" style="background-image:url('{% static 'images/background/footer-bg.jpg' %}')"></div>-->
-
         <div class="auto-container">
             <!--Widgets Section-->
             <div class="widgets-section">
@@ -239,11 +240,12 @@
                         <div class="footer-widget logo-widget">
                             <div class="widget-content">
                                 <div class="footer-logo">
-                                    <a href="home.html"><img alt="" src="{% static 'images/sticky-logo.png' %}"/></a>
-                                </div>
+                                    <a href="home.html"><img alt=""
+                                                             src="{% static 'images/sticky-logo.png' %}"/></a></div>
                                 <div class="text"> We are dedicated to empowering
                                     communities by focusing on children. We believe that by
-                                    investing in the education and well-being of children, we can create a ripple effect
+                                    investing in the education and well-being of children, we can create a ripple
+                                    effect
                                     that lifts entire families out of poverty and fosters lasting change.
                                 </div>
                             </div>
@@ -293,186 +295,37 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="auto-container">
-                <div class="inner">
-                    <!--Copyright-->
-                    <div class="copyright">Copyrights (c) 2024 <a href="#">HopeAbound.</a> All
-                        rights reserved.
+            <div class="footer-bottom">
+                <div class="auto-container">
+                    <div class="inner">
+                        <!--Copyright-->
+                        <div class="copyright">Copyrights (c) 2024 <a href="#">HopeAbound.</a> All
+                            rights reserved.
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-</div>
 
 
-<!-- Footer Bottom -->
+    <!-- Footer Bottom -->
 
-<!--End pagewrapper-->
+    <!--End pagewrapper-->
 
-<!--Scroll to top-->
-<div class="scroll-to-top scroll-to-target" data-target="html"><span class="flaticon-up-arrow"></span></div>
+    <!--Scroll to top-->
+    <div class="scroll-to-top scroll-to-target" data-target="html"><span class="flaticon-up-arrow"></span></div>
 
-<script src="{% static 'js/jquery.js' %}"></script>
-<script src="{% static 'js/popper.min.js' %}"></script>
-<script src="{% static 'js/bootstrap.min.js' %}"></script>
-<script src="{% static 'js/jquery-ui.js' %}"></script>
-<script src="{% static 'js/jquery.fancybox.js' %}"></script>
-<script src="{% static 'js/owl.js' %}"></script>
-<script src="{% static 'js/appear.js' %}"></script>
-<script src="{% static 'js/wow.js' %}"></script>
-<script src="{% static 'js/scrollbar.js' %}"></script>
-<script src="{% static 'js/validate.js' %}"></script>
-<script src="{% static 'js/paroller.js' %}"></script>
-<script src="{% static 'js/custom-script.js' %}"></script>
-
-<!-- templates/base.html -->
-{% load static %}
-<html lang="en">
-<head>
-
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-
-    <meta content="" name="description">
-    <meta content="" name="author">
-
-    <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
-    <title>Hope Abounds Uganda</title>
-
-    <!-- CSS FILES -->
-    <link href="https://fonts.googleapis.com" rel="preconnect">
-    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
-    <link href="{% static 'css/bootstrap-icons.css' %}" rel="stylesheet">
-    <link href="{% static 'css/owl.carousel.min.css' %}" rel="stylesheet">
-    <link href="{% static 'css/owl.theme.default.min.css' %}" rel="stylesheet">
-    <link href="{% static 'css/templatemo-medic-care.css' %}" rel="stylesheet">
-
-</head>
-<body>
-<nav class="navbar navbar-expand-lg bg-light fixed-top shadow-lg">
-    <div class="container">
-        <a class="navbar-brand mx-auto d-lg-none" href="home.html">
-            Hope Abounds
-            <strong class="d-block">Uganda</strong>
-        </a>
-
-        <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
-                data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mx-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#hero">Home</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                </li>
-
-                <li class="nav-item d-none d-lg-block">
-                    <a class="nav-link" href="home.html">
-                        HopeAbounds
-                        <strong class="d-block">Uganda</strong>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#booking">Booking</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
-
-    </div>
-</nav>
-
-{% block content %}
-
-{% endblock %}
-
-<footer class="site-footer section-padding">
-    <div class="container">
-        <div class="row">
-
-            <div class="col-lg-3 col-md-6 col-12">
-                <h4 class="text-white mb-4">Opening Hours</h4>
-
-                <p class="text-white">Monday to Friday</p>
-
-                <p class="text-white">8:00 AM - 3:30 PM</p>
-
-                <p class="text-white">Saturday</p>
-
-                <p class="text-white">8:00 AM - 11:30 AM</p>
-
-                <p class="text-white">Sunday</p>
-
-                <p class="text-white">Closed</p>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-12 mx-auto">
-                <h4 class="text-white mb-4">Contact Information</h4>
-
-                <p class="text-white"><i class="bi-geo-alt me-2"></i> Akershusstranda 20, 0150 Oslo, Norway</p>
-
-                <p class="text-white"><i class="bi-telephone me-2"></i> 010-020-0340</p>
-
-                <p class="text-white"><i class="bi-envelope me-2"></i>
-                    <a href="mailto:info@company.com">info@company.com</a>
-                </p>
-
-                <ul class="social-icon mt-4">
-                    <li class="social-icon-item">
-                        <a class="social-icon-link bi-twitter" href="#"></a>
-                    </li>
-
-                    <li class="social-icon-item">
-                        <a class="social-icon-link bi-facebook" href="#"></a>
-                    </li>
-
-                    <li class="social-icon-item">
-                        <a class="social-icon-link bi-instagram" href="#"></a>
-                    </li>
-
-                    <li class="social-icon-item">
-                        <a class="social-icon-link bi-linkedin" href="#"></a>
-                    </li>
-
-                    <li class="social-icon-item">
-                        <a class="social-icon-link bi-youtube" href="#"></a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-12">
-                <h4 class="text-white mb-4">Our Location</h4>
-
-                <p class="text-white">Akershusstranda 20, 0150 Oslo, Norway</p>
-
-                <div class="google-map w-100">
-                    <iframe allowfullscreen=""
-                            aria-hidden="false" frameborder="0" height="250"
-                            src="https://maps.google.com/maps?q=0150%20Oslo,%20Norway&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                            style="border:0;"
-                            tabindex="0" width="100%"></iframe>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</footer>
-
-<!-- Rest of the code... -->
-
-</body>
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/jquery-ui.js' %}"></script>
+    <script src="{% static 'js/jquery.fancybox.js' %}"></script>
+    <script src="{% static 'js/owl.js' %}"></script>
+    <script src="{% static 'js/appear.js' %}"></script>
+    <script src="{% static 'js/wow.js' %}"></script>
+    <script src="{% static 'js/scrollbar.js' %}"></script>
+    <script src="{% static 'js/validate.js' %}"></script>
+    <script src="{% static 'js/paroller.js' %}"></script>
+    <script src="{% static 'js/custom-script.js' %}"></script>
 </html>

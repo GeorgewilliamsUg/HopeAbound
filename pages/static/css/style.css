@@ -1575,7 +1575,7 @@ img{
 	height: 100%;
 	max-height: 100%;
 	overflow-y: auto;
-	background: #202020;
+	background: #18434a;
 	padding: 0px 0px;
 	z-index: 5;
 	opacity: 0;
@@ -1808,7 +1808,7 @@ img.lazy-image.loaded{
 .banner-carousel .slide-item{
 	position: relative;
 	display: block;
-	background-color: #000000;
+	background-color: #ad4813;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -4733,13 +4733,13 @@ img.lazy-image.loaded{
 	position:relative;
 	padding:0px 0px;
 	line-height:24px;
-	color: #777777;
+	color: #ffffff;
 	font-size:15px;
 	text-align: center;
 }
 
 .main-footer .footer-bottom a{
-	color: #ffffff;
+	color: #18434a;
 }
 
 .main-footer .footer-bottom .inner{
