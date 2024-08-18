@@ -1,6 +1,5 @@
 from django.conf import settings
 from django.conf.urls.static import static
-from django.contrib import admin
 from django.urls import path
 from .views import (
     home_view, about_view, contact_view, causes_view, cause_single_view,
@@ -22,6 +21,5 @@ urlpatterns = [
                   path('gallery/', gallery_view, name='gallery'),
                   path('volunteers/', volunteers_view, name='volunteers'),
                   path('sponsorship/', sponsorship_view, name='sponsorship'),
-                  path('admin/', admin.site.urls, name ='admin'),
                   path('child/<int:child_id>/', child_detail_view, name='child_detail'),
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
