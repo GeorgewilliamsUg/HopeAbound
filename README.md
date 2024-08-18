@@ -68,7 +68,8 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 #Contact
 For any inquiries or support, please contact:
 
-Your Name: sgeorge.ug@gmail.com
+GeorgewilliamsUg
+Email: sgeorge.ug@gmail.com
 
 
 
