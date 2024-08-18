@@ -39,8 +39,7 @@ HopeAbound is dedicated to helping children from disadvantaged communities, incl
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/HopeAbound.git
-   cd HopeAbound
+   git clone https://github.com/GeorgewilliamsUg/HopeAbound.git
    
 python -m venv venv
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`
@@ -68,12 +67,8 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 #Contact
 For any inquiries or support, please contact:
 
-# GeorgewilliamsUg
 Email: sgeorge.ug@gmail.com
 
-
-
-This `README.md` provides a clear overview of your project, instructions for installation, usage, and how others can contribute. Be sure to replace placeholder information like `your-username`, `sgeorge.ug@gmail.com`, and repository links with your actual details.
 
 
 
