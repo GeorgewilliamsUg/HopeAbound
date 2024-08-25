@@ -55,6 +55,11 @@ def sponsorship_view(request):
     return render(request, 'sponsorship.html', {'children': children})
 
 
-def child_detail_view(request, child_id):
-    child = get_object_or_404(ChildProfile, id=child_id)
+def child_detail_view(request, pk):
+    child = get_object_or_404(ChildProfile, pk=pk)
+    return render(request, 'child_detail.html', {'child': child})
+
+
+def child_detail(request, pk):
+    child = get_object_or_404(ChildProfile, pk=pk)
     return render(request, 'child_detail.html', {'child': child})
